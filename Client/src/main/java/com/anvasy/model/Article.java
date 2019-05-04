@@ -1,8 +1,11 @@
 package com.anvasy.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.Entity;
 
 @Entity
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Article {
     private int id;
     private String topic;

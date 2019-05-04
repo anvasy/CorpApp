@@ -1,10 +1,18 @@
 package com.anvasy.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Data
+@Builder
+@AllArgsConstructor
 @Table(name = "articles")
 public class Article {
 
@@ -29,9 +37,10 @@ public class Article {
     private int rateNumber;
 
     @ManyToMany
-    @JoinTable(name = "users",
-            joinColumns = @JoinColumn(name = "id"),
-            inverseJoinColumns = @JoinColumn(name = "id"))
+    @JoinTable(name = "rated_articles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "article_id"))
+    @JsonIgnore
     private List<User> users = new ArrayList<>();
 
     public Article() {

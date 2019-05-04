@@ -8,7 +8,7 @@ import java.util.List;
 
 public abstract class Service<T> {
 
-    private Session session;
+    protected Session session;
 
     Service() {
         SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
