@@ -45,6 +45,9 @@
                 </div>
                 <div class="panel-body">
                     <h3>Список статей: </h3>
+                    <form:form action="addedit" method="get">
+                        <button class="btn-block" type="submit" name="id" value="0">Добавить статью</button>
+                    </form:form>
                     <TABLE class="table table-striped table-hover">
                         <TR style="background-color: #2a6496; color: #2a6496">
                             <TH>НАЗВАНИЕ</TH>
@@ -89,6 +92,11 @@
                             </TR>
                         </c:forEach>
                     </TABLE>
+                    <br>
+                    <br>
+                    <form:form action="addedit" method="get">
+                        <button class="btn-block" type="submit" name="id" value="0">Добавить статью</button>
+                    </form:form>
                 </div>
             </div>
         </div>

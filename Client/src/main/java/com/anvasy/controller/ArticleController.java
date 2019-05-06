@@ -4,7 +4,6 @@ import com.anvasy.model.Article;
 import com.anvasy.rest.RestConnector;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +25,6 @@ public class ArticleController {
     public ModelAndView getArticleList() {
         ModelAndView modelAndView = new ModelAndView("/home");
         List<Article> articles = restConnector.getArticleList();
-        logger.info(articles.size() + " " + articles.get(0).getTopic() + " " + articles.get(0).getId());
         modelAndView.addObject("articles", articles);
         return modelAndView;
     }
@@ -39,15 +37,27 @@ public class ArticleController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/addedit", method = RequestMethod.GET)
+    public ModelAndView goToEdit(@RequestParam String id) {
+        ModelAndView modelAndView = new ModelAndView("/addedit");
+        Article article;
+        if (id.equals("0"))
+            article = new Article();
+        else
+            article = restConnector.getArticle(Integer.valueOf(id));
+        modelAndView.addObject("article", article);
+        return modelAndView;
+    }
+
     @RequestMapping(value = "/addedit", method = RequestMethod.POST)
-    public ModelAndView updateArticle(@ModelAttribute("article")Article article) {
+    public String updateArticle(@ModelAttribute("article")Article article) {
         restConnector.updateArticle(article);
-        return getArticleList();
+        return "redirect:/home";
     }
 
     @RequestMapping(value = "/article", method = RequestMethod.POST)
-    public ModelAndView removeArticle(@ModelAttribute("article")Article article) {
-        restConnector.removeArticle(article);
-        return getArticleList();
+    public String removeArticle(@RequestParam String id) {
+        restConnector.removeArticle(Integer.valueOf(id));
+        return"redirect:/home";
     }
 }

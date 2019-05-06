@@ -48,34 +48,25 @@
         <div style="height: 40px;"></div>
         <div class="col-md-12" id="content">
             <div class="panel">
-                <div class="panel-heading" style="background-color:#111;color:#fff;height: 40px">
-                    <div class="col-sm-6" style="text-align: center;">
-                        <c:out value='${article.topic}'/>
-                    </div>
-                </div>
+                <div class="panel-heading" style="background-color:#111;color:#fff;height: 40px"></div>
 
                 <div class="panel-body">
-                    <h3>Оценка: ${article.rate}</h3>
-                    <form action="bonus" method="post">
-                        <select style="height: 50px; margin-left: 20px" name="rated">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <button name="rated" style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
-                            <img src="<c:url value="/resources/img/Star.png"/>" class="login">
-                        </button>
-                    </form>
-                    <hr>
-                    <p>${article.content}</p>
-                    <hr>
-                    <form:form action="addedit" method="get">
-                        <button class="btn-block" type="submit" name="id" value="${article.id}">Изменить</button>
+                    <form:form method="post" action="addedit" modelAttribute="article">
+                        <h4>Тема: </h4>
+                        <form:input  path = "topic" required="required" class="form-control" pattern="[A-Za-z0-9- ]+" value="${article.topic}"/>
+
+                        <h4>Краткое содержание:</h4>
+                        <form:textarea  path = "summary" required="required" class="form-control" value="${article.summary}" cssStyle="resize: none; height: 15%"/>
+
+                        <h4>Текст статьи:</h4>
+                        <form:textarea  path = "content" required="required" class="form-control" value="${article.content}" cssStyle="resize: none; height: 50%"/>
+                        <br>
+                        <br>
+                        <button class="btn-block" type="submit" name="id" value="${article.id}">Сохранить</button>
                     </form:form>
-                    <form:form action="article" method="post">
-                        <button class="btn-block" type="submit" name="id" value="${article.id}">Удалить</button>
+                    <hr>
+                    <form:form action="article" method="get">
+                        <button class="btn-block" type="submit" value="${article.id}" name="id">Отмена</button>
                     </form:form>
                     <hr>
                 </div>

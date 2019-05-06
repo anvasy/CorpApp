@@ -18,9 +18,11 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-right navbar-nav">
                 <li>
-                    <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
-                        <img src="<c:url value="/resources/img/Home.png"/>" class="home">
-                    </button>
+                    <form:form method="GET" action="home">
+                        <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
+                            <img src="<c:url value="/resources/img/Home.png"/>" class="login">
+                        </button>
+                    </form:form>
                 </li>
             </ul>
         </div>

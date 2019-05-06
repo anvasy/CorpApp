@@ -99,3 +99,281 @@
 13:51:52,833  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
 13:51:52,998  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
 13:53:00,867  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+13:59:26,811  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+13:59:26,813  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+13:59:27,270  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+13:59:27,377  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+13:59:27,379  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:59:27,386  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+13:59:27,386  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+13:59:27,386  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+13:59:27,389  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:59:27,590  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14:00:10,094  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+14:30:16,287  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+14:30:16,289  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+14:30:16,695  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+14:30:16,784  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+14:30:16,787  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:30:16,792  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+14:30:16,792  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+14:30:16,793  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+14:30:16,795  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+14:30:16,956  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14:31:15,806  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+14:51:06,429  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+14:51:06,431  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+14:51:07,006  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+14:51:07,103  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+14:51:07,106  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:51:07,112  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+14:51:07,113  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+14:51:07,113  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+14:51:07,115  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+14:51:07,284  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14:51:57,443  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+14:53:14,944  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+14:53:14,951  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+14:53:18,278  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+14:53:18,698  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+14:53:18,708  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:53:18,727  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+14:53:18,727  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+14:53:18,728  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+14:53:18,740  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+14:53:19,374  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14:53:58,470  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+14:55:35,419  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+14:55:35,422  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+14:55:38,767  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+14:55:39,098  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+14:55:39,106  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:55:39,123  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+14:55:39,124  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+14:55:39,124  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+14:55:39,134  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+14:55:39,640  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14:55:47,712  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+11:31:23,028  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+11:31:23,132  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+11:31:23,492  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+11:31:23,596  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+11:31:23,598  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+11:31:23,604  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+11:31:23,604  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+11:31:23,604  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+11:31:23,607  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+11:31:23,785  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+11:46:30,251  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+17:43:37,064  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+17:43:37,067  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+17:43:37,499  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:43:37,653  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+17:43:37,657  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+17:43:37,666  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+17:43:37,666  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+17:43:37,666  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+17:43:37,670  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+17:43:37,916  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+17:46:08,869  INFO http-bio-8000-exec-5 - HHH000397: Using ASTQueryTranslatorFactory
+17:52:48,710  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+17:52:48,712  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+17:52:48,991  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:52:49,084  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+17:52:49,086  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+17:52:49,092  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+17:52:49,092  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+17:52:49,092  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+17:52:49,095  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+17:52:49,263  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+17:53:55,504  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+17:53:55,506  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+17:53:55,835  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:53:55,940  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+17:53:55,944  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+17:53:55,949  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+17:53:55,950  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+17:53:55,950  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+17:53:55,954  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+17:53:56,147  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:04:43,100  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:04:43,105  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:04:43,917  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:04:44,318  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:04:44,328  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:04:44,347  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:04:44,348  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:04:44,348  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:04:44,361  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:04:44,994  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:11:53,778  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:11:53,780  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:11:54,036  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:11:54,149  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:11:54,152  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:11:54,158  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:11:54,158  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:11:54,158  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:11:54,161  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:11:54,354  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:13:18,520  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:13:18,522  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:13:19,011  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:13:19,113  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:13:19,115  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:13:19,121  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:13:19,122  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:13:19,122  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:13:19,125  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:13:19,310  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:14:43,205  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:14:43,207  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:14:43,448  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:14:43,567  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:14:43,569  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:14:43,574  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:14:43,575  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:14:43,575  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:14:43,578  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:14:43,764  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:15:52,531  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:15:52,534  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:15:52,773  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:15:52,891  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:15:52,894  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:15:52,899  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:15:52,900  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:15:52,900  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:15:52,903  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:15:53,097  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:18:31,362  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:18:31,364  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:18:31,684  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:18:31,785  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:18:31,787  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:18:31,793  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:18:31,793  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:18:31,793  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:18:31,796  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:18:31,986  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:19:51,425  INFO http-bio-8000-exec-2 - HHH000397: Using ASTQueryTranslatorFactory
+18:39:33,310  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:39:33,312  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:39:33,617  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:39:33,713  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:39:33,716  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:39:33,722  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:39:33,722  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:39:33,722  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:39:33,725  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:39:33,899  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:43:15,666  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:43:15,668  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:43:15,975  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:43:16,073  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:43:16,076  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:43:16,081  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:43:16,082  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:43:16,082  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:43:16,086  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:43:16,260  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+19:08:57,117  INFO http-bio-8000-exec-2 - HHH000397: Using ASTQueryTranslatorFactory
+19:19:07,101  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+19:19:07,104  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+19:19:08,262  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:19:08,451  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:19:08,455  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+19:19:08,461  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+19:19:08,462  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+19:19:08,462  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+19:19:08,465  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:19:08,714  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+19:28:00,899  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+19:30:45,398  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+19:30:45,401  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+19:30:46,062  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:30:46,219  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:30:46,224  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+19:30:46,232  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+19:30:46,233  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+19:30:46,233  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+19:30:46,237  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:30:46,472  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+19:31:24,571  INFO http-bio-8000-exec-4 - HHH000397: Using ASTQueryTranslatorFactory
+19:32:33,797 ERROR http-bio-8000-exec-10 - could not read a hi value
+java.sql.SQLSyntaxErrorException: Table 'l_net.hibernate_sequence' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:970)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1020)
+	at org.hibernate.id.enhanced.TableStructure.executeQuery(TableStructure.java:216)
+	at org.hibernate.id.enhanced.TableStructure.access$300(TableStructure.java:46)
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:138)
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:126)
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:55)
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:57)
+	at org.hibernate.id.enhanced.TableStructure$1.getNextValue(TableStructure.java:125)
+	at org.hibernate.id.enhanced.NoopOptimizer.generate(NoopOptimizer.java:40)
+	at org.hibernate.id.enhanced.SequenceStyleGenerator.generate(SequenceStyleGenerator.java:452)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:105)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:192)
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:177)
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32)
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:73)
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:691)
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:683)
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:678)
+	at com.anvasy.services.Service.save(Service.java:21)
+	at com.anvasy.controller.ArticleController.updateArticle(ArticleController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:888)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+19:32:33,803  WARN http-bio-8000-exec-10 - SQL Error: 1146, SQLState: 42S02
+19:32:33,803 ERROR http-bio-8000-exec-10 - Table 'l_net.hibernate_sequence' doesn't exist
+19:35:14,044  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+19:35:14,046  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+19:35:14,361  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:35:14,461  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+19:35:14,464  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+19:35:14,471  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+19:35:14,471  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+19:35:14,472  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+19:35:14,474  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+19:35:14,646  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+19:35:17,662  INFO http-bio-8000-exec-1 - HHH000397: Using ASTQueryTranslatorFactory

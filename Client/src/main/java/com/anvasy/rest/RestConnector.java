@@ -18,7 +18,7 @@ import java.util.List;
 @Service
 public class RestConnector {
     private static String GET_ARTICLES_URL = "http://localhost:8000/corp-server/article";
-    private static String ARTICLE_URL = "http://localhost:8080/corp-server/article/%s";
+    private static String ARTICLE_URL = "http://localhost:8000/corp-server/article/%s";
 
     private Logger logger = org.apache.log4j.Logger.getLogger(RestConnector.class);
 
@@ -40,9 +40,9 @@ public class RestConnector {
         return restTemplate.getForObject(String.format(ARTICLE_URL, id), Article.class);
     }
 
-    public void removeArticle(Article article) {
+    public void removeArticle(int id) {
         RestTemplate restTemplate = new RestTemplate();
-        restTemplate.delete(String.format(ARTICLE_URL, article.getId()));
+        restTemplate.delete(String.format(ARTICLE_URL, id));
     }
 
     public void updateArticle(Article article) {

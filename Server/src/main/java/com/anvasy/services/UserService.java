@@ -10,17 +10,18 @@ import java.util.List;
 public class UserService extends com.anvasy.services.Service<User> {
 
     @Override
-    User get(int id) {
-        return null;
+    public User get(int id) {
+        return session.get(User.class, id);
     }
 
     @Override
-    List<User> getAll() {
-        return null;
+    @SuppressWarnings("unchecked")
+    public List<User> getAll() {
+        return (List<User>) session.createQuery("from User").list();
     }
 
     @Override
-    Session getCurrentSession() {
-        return null;
+    public Session getCurrentSession() {
+        return session;
     }
 }
