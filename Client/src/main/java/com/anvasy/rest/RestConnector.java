@@ -25,12 +25,9 @@ public class RestConnector {
     public List<Article> getArticleList() {
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity<Article> request = new HttpEntity<>(new Article());
-        ResponseEntity<List<Article>> articleResponse =
-                restTemplate.exchange(GET_ARTICLES_URL,
-                        HttpMethod.GET, request, new ParameterizedTypeReference<List<Article>>() {
-                        });
-        List<Article> articles = articleResponse.getBody();
-        return articles;
+        ResponseEntity<List<Article>> articleResponse = restTemplate.exchange(GET_ARTICLES_URL,
+                        HttpMethod.GET, request, new ParameterizedTypeReference<List<Article>>() { });
+        return articleResponse.getBody();
     }
 
     public Article getArticle(int id) {

@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ page isELIgnored="false"%>
+<%@ page isELIgnored="false" %>
 
 <html>
 <head>
@@ -37,42 +37,46 @@
             </div>
             <div class="panel-body" style="background-color: white">
                 <h3>Список пользователей:</h3>
-                    <TABLE class="table table-striped table-hover">
-                        <TR style="background-color: #2a6496; color: #2a6496">
-                            <TH>Логин</TH>
-                            <TH>Имя</TH>
-                            <TH>Фамилия</TH>
-                            <TH>Роль</TH>
-                            <TH>Тип регистрации</TH>
-                            <TH></TH>
-                        </TR>
-                       <!-- <c:forEach var="tableUser" items="${users}">
+                <TABLE class="table table-striped table-hover">
+                    <TR style="background-color: #2a6496; color: #2a6496">
+                        <TH>Логин</TH>
+                        <TH>Имя</TH>
+                        <TH>Фамилия</TH>
+                        <TH>Роль</TH>
+                        <TH>Тип регистрации</TH>
+                        <TH></TH>
+                    </TR>
+                    <c:forEach var="tableUser" items="${users}">
+                        <c:if test="${sessionScope.get('username') != tableUser.username}">
                             <TR>
                                 <TD>${tableUser.username}</TD>
                                 <TD>${tableUser.name}</TD>
                                 <TD>${tableUser.surname}</TD>
                                 <TD>${tableUser.role}</TD>
                                 <TD>${tableUser.regType}</TD>
+                                <form action="changerole" method="post">
+                                    <input type="hidden" name="role" value="${tableUser.role}">
                                 <c:choose>
                                     <c:when test="${tableUser.role eq 'user'}">
                                         <TD>
-                                            <button name="id" value="${tableUser.id}">Повысить</button>
+                                            <button name="username" value="${tableUser.username}">Повысить</button>
                                         </TD>
                                     </c:when>
                                     <c:otherwise>
                                         <TD>
-                                            <button name="id" value="${tableUser.id}">Понизить</button>
+                                            <button name="username" value="${tableUser.id}">Понизить</button>
                                         </TD>
                                     </c:otherwise>
                                 </c:choose>
+                                </form>
                             </TR>
-                        </c:forEach> -->
-                    </TABLE>
-                    <br>
+                        </c:if>
+                    </c:forEach>
+                </TABLE>
+                <br>
                 <br>
                 <form:form method="post" action="admin">
-                    <button type="submit" name="logout" class="btn">Выйти
-                    </button>
+                    <button type="submit" name="logout" class="btn">Выйти</button>
                 </form:form>
             </div>
         </div>

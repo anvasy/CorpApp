@@ -2,3 +2,4 @@
 *.iml
 Client/target/
 Server/target/
+.gitignore

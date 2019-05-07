@@ -27,14 +27,18 @@
                 <li>
                     <c:choose>
                         <c:when test="${sessionScope.get('role') eq null}">
-                            <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
-                                <img src="<c:url value="/resources/img/Plus.png"/>" class="login">
-                            </button>
+                            <form:form method="GET" action="login">
+                                <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
+                                    <img src="<c:url value="/resources/img/Plus.png"/>" class="login">
+                                </button>
+                            </form:form>
                         </c:when>
                         <c:otherwise>
-                            <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
-                                <img src="<c:url value="/resources/img/Minus.png"/>" class="login">
-                            </button>
+                            <form:form method="POST" action="admin">
+                                <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
+                                    <img src="<c:url value="/resources/img/Minus.png"/>" class="login">
+                                </button>
+                            </form:form>
                         </c:otherwise>
                     </c:choose>
                 </li>
@@ -71,12 +75,16 @@
                     <hr>
                     <p>${article.content}</p>
                     <hr>
-                    <form:form action="addedit" method="get">
-                        <button class="btn-block" type="submit" name="id" value="${article.id}">Изменить</button>
-                    </form:form>
-                    <form:form action="article" method="post">
-                        <button class="btn-block" type="submit" name="id" value="${article.id}">Удалить</button>
-                    </form:form>
+                    <c:if test="${sessionScope.get('role') ne null}">
+                        <form:form action="addedit" method="get">
+                            <button class="btn-block" type="submit" name="id" value="${article.id}">Изменить</button>
+                        </form:form>
+                        <c:if test="${sessionScope.get('role') eq 'admin'}">
+                            <form:form action="article" method="post">
+                                <button class="btn-block" type="submit" name="id" value="${article.id}">Удалить</button>
+                            </form:form>
+                        </c:if>
+                    </c:if>
                     <hr>
                 </div>
             </div>

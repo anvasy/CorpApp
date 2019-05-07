@@ -1,8 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page isELIgnored="false"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page isELIgnored="false" %>
 
 <html>
 <head>
@@ -27,14 +27,18 @@
                 <li>
                     <c:choose>
                         <c:when test="${sessionScope.get('role') eq null}">
-                            <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
-                                <img src="<c:url value="/resources/img/Plus.png"/>" class="login">
-                            </button>
+                            <form:form method="GET" action="login">
+                                <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
+                                    <img src="<c:url value="/resources/img/Plus.png"/>" class="login">
+                                </button>
+                            </form:form>
                         </c:when>
                         <c:otherwise>
-                            <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
-                                <img src="<c:url value="/resources/img/Minus.png"/>" class="login">
-                            </button>
+                            <form:form method="POST" action="admin">
+                                <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
+                                    <img src="<c:url value="/resources/img/Minus.png"/>" class="login">
+                                </button>
+                            </form:form>
                         </c:otherwise>
                     </c:choose>
                 </li>
@@ -53,13 +57,16 @@
                 <div class="panel-body">
                     <form:form method="post" action="addedit" modelAttribute="article">
                         <h4>Тема: </h4>
-                        <form:input  path = "topic" required="required" class="form-control" pattern="[A-Za-z0-9- ]+" value="${article.topic}"/>
+                        <form:input path="topic" required="required" class="form-control" pattern="[A-Za-z0-9- ]+"
+                                    value="${article.topic}"/>
 
                         <h4>Краткое содержание:</h4>
-                        <form:textarea  path = "summary" required="required" class="form-control" value="${article.summary}" cssStyle="resize: none; height: 15%"/>
+                        <form:textarea path="summary" required="required" class="form-control"
+                                       value="${article.summary}" cssStyle="resize: none; height: 15%"/>
 
                         <h4>Текст статьи:</h4>
-                        <form:textarea  path = "content" required="required" class="form-control" value="${article.content}" cssStyle="resize: none; height: 50%"/>
+                        <form:textarea path="content" required="required" class="form-control"
+                                       value="${article.content}" cssStyle="resize: none; height: 50%"/>
                         <br>
                         <br>
                         <button class="btn-block" type="submit" name="id" value="${article.id}">Сохранить</button>

@@ -32,8 +32,7 @@ public class ArticleController {
     @RequestMapping(value = "/article", method = RequestMethod.GET)
     public ModelAndView getArticle(@RequestParam String id) {
         ModelAndView modelAndView = new ModelAndView("/article");
-        Article article = restConnector.getArticle(Integer.valueOf(id));
-        modelAndView.addObject("article", article);
+        modelAndView.addObject("article",  restConnector.getArticle(Integer.valueOf(id)));
         return modelAndView;
     }
 

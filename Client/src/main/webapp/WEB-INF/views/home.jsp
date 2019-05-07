@@ -20,14 +20,18 @@
                 <li>
                     <c:choose>
                         <c:when test="${sessionScope.get('role') eq null}">
-                            <button style="background-color: Transparent;border: none;outline:none">
-                                <img src="<c:url value="/resources/img/Plus.png"/>" class="login">
-                            </button>
+                            <form:form method="GET" action="login">
+                                <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
+                                    <img src="<c:url value="/resources/img/Plus.png"/>" class="login">
+                                </button>
+                            </form:form>
                         </c:when>
                         <c:otherwise>
-                            <button style="background-color: Transparent;border: none;outline:none">
-                                <img src="<c:url value="/resources/img/Minus.png"/>" class="login">
-                            </button>
+                            <form:form method="POST" action="admin">
+                                <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
+                                    <img src="<c:url value="/resources/img/Minus.png"/>" class="login">
+                                </button>
+                            </form:form>
                         </c:otherwise>
                     </c:choose>
                 </li>
@@ -53,9 +57,9 @@
                             <TH>НАЗВАНИЕ</TH>
                             <TH>КРАТКОЕ СОДЕРЖАНИЕ</TH>
                             <TH></TH>
-                            <c:if test="${sessionScope.get('user') ne null}">
+                            <c:if test="${sessionScope.get('role') ne null}">
                                 <TH></TH>
-                                <c:if test="${role eq 'admin'}">
+                                <c:if test="${sessionScope.get('role') eq 'admin'}">
                                     <TH></TH>
                                 </c:if>
                             </c:if>
@@ -71,7 +75,7 @@
                                         </button>
                                     </TD>
                                 </form:form>
-                                <c:if test="${sessionScope.get('user') ne null}">
+                                <c:if test="${sessionScope.get('role') ne null}">
                                     <td>
                                         <form:form action="addedit" method="GET">
                                             <button style="background-color: Transparent; border: none;outline:none" name="id" value="${article.id}">
@@ -79,7 +83,7 @@
                                             </button>
                                         </form:form>
                                     </td>
-                                    <c:if test="${role eq 'admin'}">
+                                    <c:if test="${sessionScope.get('role') eq 'admin'}">
                                         <td>
                                             <form:form action="article" method="POST">
                                                 <button style="background-color: Transparent; border: none;outline:none" name="id" value="${article.id}">

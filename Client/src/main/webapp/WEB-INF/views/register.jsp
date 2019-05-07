@@ -36,7 +36,7 @@
             <div class="panel-heading" style="background-color:#111;color:#fff;height: 40px">
             </div>
             <div class="col-md-3"></div>
-            <div class="col-md-6" style="height: 55%; background-color: white;
+            <div class="col-md-6" style="height: 42%; background-color: white;
                 margin-top: 20px;">
                 <form:form method="POST" action="register" modelAttribute="user">
                     <br>

@@ -48,4 +48,8 @@ public abstract class Service<T> {
     abstract List<T> getAll();
 
     abstract Session getCurrentSession();
+
+    public Session getSession()  {
+        return session;
+    }
 }

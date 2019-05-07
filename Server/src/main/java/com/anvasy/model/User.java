@@ -1,5 +1,7 @@
 package com.anvasy.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +11,7 @@ import java.util.List;
 public class User {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
     private int id;
 
@@ -29,12 +31,8 @@ public class User {
     private String role;
 
     @ManyToMany(mappedBy = "users")
+    @JsonIgnore
     private List<Article> articles = new ArrayList<>();
-
-    public User(String name, String password) {
-        this.username = name;
-        this.password = password;
-    }
 
     public User() { }
 
@@ -46,38 +44,6 @@ public class User {
         this.username = username;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -86,11 +52,11 @@ public class User {
         this.password = password;
     }
 
-    public List<Article> getArticles() {
-        return articles;
-    }
+    public void setName(String name) { this.name = name; }
 
-    public void setArticles(List<Article> articles) {
-        this.articles = articles;
+    public void setSurname(String surname) { this.surname = surname; }
+
+    public int getId() {
+        return id;
     }
 }

@@ -2,7 +2,6 @@ package com.anvasy.controller;
 
 import com.anvasy.model.Article;
 import com.anvasy.services.ArticleService;
-import org.apache.log4j.Logger;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
