@@ -1,8 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page isELIgnored="false"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page isELIgnored="false" %>
 
 <html>
 <head>
@@ -54,38 +54,51 @@
             <div class="panel">
                 <div class="panel-heading" style="background-color:#111;color:#fff;height: 40px">
                     <div class="col-sm-6" style="text-align: center;">
-                        <c:out value='${article.topic}'/>
                     </div>
                 </div>
 
                 <div class="panel-body">
-                    <h3>Оценка: ${article.rate}</h3>
-                    <form action="bonus" method="post">
-                        <select style="height: 50px; margin-left: 20px" name="rated">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <button name="rated" style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
-                            <img src="<c:url value="/resources/img/Star.png"/>" class="login">
-                        </button>
-                    </form>
-                    <hr>
-                    <p>${article.content}</p>
-                    <hr>
-                    <c:if test="${sessionScope.get('role') ne null}">
-                        <form:form action="addedit" method="get">
-                            <button class="btn-block" type="submit" name="id" value="${article.id}">Изменить</button>
-                        </form:form>
-                        <c:if test="${sessionScope.get('role') eq 'admin'}">
-                            <form:form action="article" method="post">
-                                <button class="btn-block" type="submit" name="id" value="${article.id}">Удалить</button>
-                            </form:form>
+                    <div itemscope itemtype="http://schema.org/Article">
+                        <h2 itemprop="name">${article.topic}</h2>
+                        <meta itemprop="headline" content="${article.topic}">
+                        <h3>Оценка: ${article.rate}</h3>
+                        <c:if test="${sessionScope.get('role') ne null}">
+                            <form action="bonus" method="post">
+                                <select style="height: 50px; margin-left: 20px" name="rated">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <button name="rated"
+                                        style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
+                                    <img src="<c:url value="/resources/img/Star.png"/>" class="login">
+                                </button>
+                            </form>
                         </c:if>
-                    </c:if>
-                    <hr>
+                        <hr>
+                        <h3>Краткое содержание: </h3>
+                        <p itemprop="articleBody">${article.summary}</p>
+                        <meta itemprop="description" content="${article.summary}">
+                        <hr>
+                        <h3>Текст статьи: </h3>
+                        <p>${article.content}</p>
+                        <hr>
+                        <c:if test="${sessionScope.get('role') ne null}">
+                            <form:form action="addedit" method="get">
+                                <button class="btn-block" type="submit" name="id" value="${article.id}">Изменить
+                                </button>
+                            </form:form>
+                            <c:if test="${sessionScope.get('role') eq 'admin'}">
+                                <form:form action="article" method="post">
+                                    <button class="btn-block" type="submit" name="id" value="${article.id}">Удалить
+                                    </button>
+                                </form:form>
+                            </c:if>
+                        </c:if>
+                        <hr>
+                    </div>
                 </div>
             </div>
         </div>

@@ -53,7 +53,25 @@ public class Article {
         this.content = text;
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+
+    public String getTopic() { return topic; }
+
+    public void setId(int id) { this.id = id; }
+
+    public String getSummary() { return summary; }
+
+    public String getContent() { return content; }
+
+    public float getRate() { return rate; }
+
+    public void setRate(float rate) { this.rate = rate; }
+
+    public int getRateNumber() { return rateNumber; }
+
+    public void setRateNumber(int rateNumber) { this.rateNumber = rateNumber; }
+
+    public List<User> getUsers() { return users; }
+
+    public void setUsers(List<User> users) { this.users = users; }
 }

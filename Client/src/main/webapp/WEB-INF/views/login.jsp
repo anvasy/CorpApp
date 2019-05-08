@@ -40,7 +40,7 @@
                 margin-top: 50px;">
                     <form:form method="POST" action="login" modelAttribute="user">
                         <br>
-                        <c:if test="${incor == true}">
+                        <c:if test="${incorr == true}">
                             <h6 style="margin-left: 5%; background: red; color: white; width: 25%">неверное имя пользоватея или пароль</h6>
                         </c:if>
                         <h4 style="margin-left: 5%">Имя пользователя: </h4>

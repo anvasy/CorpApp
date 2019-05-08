@@ -9,14 +9,24 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
+import static org.hamcrest.Matchers.any;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 
@@ -35,7 +45,6 @@ public class ClientTest {
 
     @Mock
     private RestConnector restConnector = new RestConnector();
-
 
     @Before
     public void setup() {
@@ -61,6 +70,7 @@ public class ClientTest {
         when(restUserConnector.getUsers()).thenReturn(Arrays.asList(first, second));
 
         mockMvc.perform(get("/admin")).andExpect(status().isOk());
+        mockMvc.perform(post("/admin")).andExpect(status().isFound());
     }
 
     @Test
@@ -69,33 +79,25 @@ public class ClientTest {
         Article second = new Article();
 
         when(restConnector.getArticleList()).thenReturn(Arrays.asList(first, second));
+        when(restConnector.getArticle(anyInt())).thenReturn(new Article());
 
         mockMvc.perform(get("/home")).andExpect(status().isOk());
+        mockMvc.perform(get("/addedit").param("id", "0")).andExpect(status().isOk());
+        mockMvc.perform(get("/article").param("id", "0")).andExpect(status().isOk());
     }
 
+
+
     @Test
-    public void justForCoverage() {
+    public void testArticleAndUser() {
         Article article = new Article(1);
         article.getSummary();
-        article.getRateNumber();
         article.getRate();
         article.getContent();
         article.getTopic();
         article.getId();
-        article.setRate(1);
-        article.setRateNumber(1);
-        article.setId(1);
-        article.setSummary("a");
-        article.setContent("a");
-        article.setTopic("a");
 
-        User user = new User("a", "a");
-        user.setSurname("a");
-        user.setId(1);
-        user.setRole("a");
-        user.setUsername("a");
-        user.setPassword("a");
-        user.setRegType("a");
+        User user = new User();
         user.setName("a");
         user.getSurname();
         user.getId();

@@ -22,6 +22,7 @@ public class ServerTest {
         article.setContent("TEST CONTENT");
         article.setSummary("TEST SUMMARY");
 
+        assertNotNull(articleService.getSession());
         articleService.save(article);
         articleService.close();
 
@@ -38,13 +39,16 @@ public class ServerTest {
         user.setUsername("TEST USERNAME");
         user.setPassword("TEST PASSWORD");
 
-        userService.save(user);
+        userService.register(user);
         userService.close();
 
         UserService service = new UserService();
+        assertNotNull(service.getSession());
         user = service.get("TEST USERNAME", "TEST PASSWORD");
         user.setName("TEST NAME");
         user.setSurname("TEST SURNAME");
+        user.setRole("admin");
+        user.setPassword("TEST PASSWORD 1");
         service.update(user);
         deleteUser();
     }

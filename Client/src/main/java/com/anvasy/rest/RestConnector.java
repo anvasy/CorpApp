@@ -13,14 +13,10 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
-//-Dmaven.tomcat.port=8000 tomcat7:run-war
-
 @Service
 public class RestConnector {
-    private static String GET_ARTICLES_URL = "http://localhost:8000/corp-server/article";
-    private static String ARTICLE_URL = "http://localhost:8000/corp-server/article/%s";
-
-    private Logger logger = org.apache.log4j.Logger.getLogger(RestConnector.class);
+    private static String GET_ARTICLES_URL = "http://an_vasy:8080/corp-server/article";
+    private static String ARTICLE_URL = "http://an_vasy:8080/corp-server/article/%s";
 
     public List<Article> getArticleList() {
         RestTemplate restTemplate = new RestTemplate();

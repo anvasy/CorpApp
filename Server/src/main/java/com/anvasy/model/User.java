@@ -36,6 +36,20 @@ public class User {
 
     public User() { }
 
+    public void setId(int id) { this.id = id; }
+
+    public String getName() { return name; }
+
+    public String getSurname() { return surname; }
+
+    public String getRole() { return role; }
+
+    public void setRole(String role) { this.role = role; }
+
+    public List<Article> getArticles() { return articles; }
+
+    public void setArticles(List<Article> articles) { this.articles = articles; }
+
     public String getUsername() {
         return username;
     }

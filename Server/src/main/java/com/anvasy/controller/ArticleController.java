@@ -11,10 +11,14 @@ import java.util.List;
 @RestController
 public class ArticleController {
 
+    private org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(ArticleController.class);
+
     @RequestMapping(value = "/article", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody List<Article> getArticleList() {
         ArticleService articleService = new ArticleService();
-        return articleService.getAll();
+        List<Article> articles = articleService.getAll();
+        logger.info(articles.get(0).getTopic());
+        return articles;
     }
 
     @RequestMapping(value = "/article/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
