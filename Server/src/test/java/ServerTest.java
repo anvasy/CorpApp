@@ -48,7 +48,6 @@ public class ServerTest {
         user.setName("TEST NAME");
         user.setSurname("TEST SURNAME");
         user.setRole("admin");
-        user.setPassword("TEST PASSWORD 1");
         service.update(user);
         deleteUser();
     }

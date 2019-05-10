@@ -15,15 +15,15 @@ import java.util.List;
 
 @Service
 public class RestConnector {
-    private static String GET_ARTICLES_URL = "http://an_vasy:8080/corp-server/article";
-    private static String ARTICLE_URL = "http://an_vasy:8080/corp-server/article/%s";
+    //private static String GET_ARTICLES_URL = "http://an_vasy:8080/corp-server/article";
+    //private static String ARTICLE_URL = "http://an_vasy:8080/corp-server/article/%s";
+
+    private static String GET_ARTICLES_URL = "http://localhost:8080/corp-server/article";
+    private static String ARTICLE_URL = "http://localhost:8080/corp-server/article/%s";
 
     public List<Article> getArticleList() {
-        RestTemplate restTemplate = new RestTemplate();
-        HttpEntity<Article> request = new HttpEntity<>(new Article());
-        ResponseEntity<List<Article>> articleResponse = restTemplate.exchange(GET_ARTICLES_URL,
-                        HttpMethod.GET, request, new ParameterizedTypeReference<List<Article>>() { });
-        return articleResponse.getBody();
+        return new RestTemplate().exchange(GET_ARTICLES_URL,
+                HttpMethod.GET, new HttpEntity<>(new Article()), new ParameterizedTypeReference<List<Article>>() { }).getBody();
     }
 
     public Article getArticle(int id) {
@@ -34,8 +34,7 @@ public class RestConnector {
     }
 
     public void removeArticle(int id) {
-        RestTemplate restTemplate = new RestTemplate();
-        restTemplate.delete(String.format(ARTICLE_URL, id));
+        new RestTemplate().delete(String.format(ARTICLE_URL, id));
     }
 
     public void updateArticle(Article article) {

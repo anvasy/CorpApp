@@ -29,7 +29,8 @@ public class UserController {
         UserService userService = new UserService();
         if(isNew.equals("0"))
             return userService.get(user.getUsername(), user.getPassword());
-        else
+        else if(isNew.equals("1"))
             return userService.register(user);
+        return userService.oAuth(user);
     }
 }

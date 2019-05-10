@@ -880,3 +880,146 @@ java.sql.SQLSyntaxErrorException: Table 'l_net.hibernate_sequence' doesn't exist
 21:23:07,469  INFO main - HHH000397: Using ASTQueryTranslatorFactory
 21:23:07,836  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
 21:23:07,838  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+14:25:23,968  INFO main - HHH000412: Hibernate Core {5.2.16.Final}
+14:25:24,075  INFO main - HHH000206: hibernate.properties not found
+14:25:24,876  INFO main - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+14:25:25,152  WARN main - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+14:25:25,158  WARN main - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+14:25:25,180  INFO main - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+14:25:25,180  INFO main - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+14:25:25,181  INFO main - HHH10001003: Autocommit mode: true
+14:25:25,187  INFO main - HHH000115: Hibernate connection pool size: 20 (min=1)
+14:25:25,671  INFO main - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14:25:27,926  INFO main - HHH000397: Using ASTQueryTranslatorFactory
+14:25:28,627  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+14:25:28,628  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:23:42,586  INFO main - HHH000412: Hibernate Core {5.2.16.Final}
+18:23:42,685  INFO main - HHH000206: hibernate.properties not found
+18:23:43,675  INFO main - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:23:43,935  WARN main - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:23:43,940  WARN main - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:23:43,958  INFO main - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:23:43,959  INFO main - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:23:43,959  INFO main - HHH10001003: Autocommit mode: true
+18:23:43,965  INFO main - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:23:46,758  INFO main - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:23:48,405  INFO main - HHH000397: Using ASTQueryTranslatorFactory
+18:23:48,994  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:23:48,995  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:24:14,437  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:24:14,439  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:24:14,673  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:24:14,774  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:24:14,776  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:24:14,782  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:24:14,782  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:24:14,782  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:24:14,785  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:24:14,959  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:26:09,782  INFO main - HHH000412: Hibernate Core {5.2.16.Final}
+18:26:09,784  INFO main - HHH000206: hibernate.properties not found
+18:26:10,399  INFO main - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:26:10,645  WARN main - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:26:10,651  WARN main - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:26:10,676  INFO main - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:26:10,677  INFO main - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:26:10,677  INFO main - HHH10001003: Autocommit mode: true
+18:26:10,686  INFO main - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:26:11,425  INFO main - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:26:13,192  INFO main - HHH000397: Using ASTQueryTranslatorFactory
+18:26:13,652  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:26:13,654  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:26:27,389  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:26:27,393  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:26:27,685  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:26:27,818  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:26:27,821  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:26:27,828  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:26:27,829  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:26:27,829  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:26:27,833  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:26:28,049  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:27:45,704  INFO http-bio-8080-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+18:27:45,925  INFO http-bio-8080-exec-1 - Ethernett
+18:28:03,544  WARN http-bio-8080-exec-3 - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:28:03,550  WARN http-bio-8080-exec-3 - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:31:27,467  INFO main - HHH000412: Hibernate Core {5.2.16.Final}
+18:31:27,469  INFO main - HHH000206: hibernate.properties not found
+18:31:27,974  INFO main - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:31:28,084  WARN main - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:31:28,086  WARN main - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:31:28,096  INFO main - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:31:28,096  INFO main - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:31:28,096  INFO main - HHH10001003: Autocommit mode: true
+18:31:28,100  INFO main - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:31:28,338  INFO main - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:31:29,347  INFO main - HHH000397: Using ASTQueryTranslatorFactory
+18:31:29,822  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:31:29,823  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:31:37,825  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+18:31:37,827  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+18:31:38,091  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:31:38,215  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:31:38,218  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:31:38,226  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:31:38,226  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:31:38,226  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+18:31:38,232  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:31:38,441  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:41:00,788  INFO http-bio-8080-exec-1 - HHH000397: Using ASTQueryTranslatorFactory
+18:41:01,073  WARN http-bio-8080-exec-1 - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:41:01,076  WARN http-bio-8080-exec-1 - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:41:21,390  INFO http-bio-8080-exec-2 - Ethernett
+18:41:38,771  INFO http-bio-8080-exec-4 - Ethernett
+18:42:08,245  WARN http-bio-8080-exec-6 - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:42:20,518  INFO http-bio-8080-exec-7 - Ethernett
+18:43:53,577  INFO http-bio-8080-exec-9 - Ethernett
+18:48:00,354  INFO main - HHH000412: Hibernate Core {5.2.16.Final}
+18:48:00,363  INFO main - HHH000206: hibernate.properties not found
+18:48:01,011  INFO main - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:48:01,264  WARN main - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:48:01,268  WARN main - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:48:01,284  INFO main - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:48:01,284  INFO main - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:48:01,284  INFO main - HHH10001003: Autocommit mode: true
+18:48:01,290  INFO main - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:48:01,864  INFO main - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:48:03,569  INFO main - HHH000397: Using ASTQueryTranslatorFactory
+18:48:03,953  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:48:03,954  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:52:03,144  INFO main - HHH000412: Hibernate Core {5.2.16.Final}
+18:52:03,151  INFO main - HHH000206: hibernate.properties not found
+18:52:03,640  INFO main - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:52:03,861  WARN main - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+18:52:03,864  WARN main - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+18:52:03,877  INFO main - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+18:52:03,878  INFO main - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+18:52:03,878  INFO main - HHH10001003: Autocommit mode: true
+18:52:03,882  INFO main - HHH000115: Hibernate connection pool size: 20 (min=1)
+18:52:04,236  INFO main - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+18:52:05,440  INFO main - HHH000397: Using ASTQueryTranslatorFactory
+18:52:05,810  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:52:05,811  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+21:16:56,273  INFO main - HHH000412: Hibernate Core {5.2.16.Final}
+21:16:56,275  INFO main - HHH000206: hibernate.properties not found
+21:16:57,253  INFO main - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+21:16:57,558  WARN main - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:16:57,563  WARN main - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+21:16:57,590  INFO main - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+21:16:57,591  INFO main - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+21:16:57,592  INFO main - HHH10001003: Autocommit mode: true
+21:16:57,603  INFO main - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:16:58,182  INFO main - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+21:17:00,512  INFO main - HHH000397: Using ASTQueryTranslatorFactory
+21:17:01,008  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 43 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+21:17:01,011  WARN main - [DEPRECATION] Encountered positional parameter near line 1, column 58 in HQL: [from com.anvasy.model.User where username=? AND password=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+21:17:16,303  INFO localhost-startStop-1 - HHH000412: Hibernate Core {5.2.16.Final}
+21:17:16,305  INFO localhost-startStop-1 - HHH000206: hibernate.properties not found
+21:17:16,544  INFO localhost-startStop-1 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+21:17:16,654  WARN localhost-startStop-1 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+21:17:16,657  WARN localhost-startStop-1 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+21:17:16,665  INFO localhost-startStop-1 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/l_net?useSSL=false&serverTimezone=UTC]
+21:17:16,665  INFO localhost-startStop-1 - HHH10001001: Connection properties: {useUnicode=true, user=root, password=****, CharSet=utf8, autocommit=true, characterEncoding=utf8}
+21:17:16,665  INFO localhost-startStop-1 - HHH10001003: Autocommit mode: true
+21:17:16,669  INFO localhost-startStop-1 - HHH000115: Hibernate connection pool size: 20 (min=1)
+21:17:16,905  INFO localhost-startStop-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect

@@ -57,10 +57,12 @@
                         <input type="submit" class="button" name="login" value="Войти" style="height: 50px; width: 90%; font-size: 20px;
                         margin-left: 5%; background-color: #5BDD5B; color: white;"/>
                     </form:form>
-                    <form:form method="GET" action="register">
-                        <button type="submit" style="height: 50px; width: 90%; font-size: 20px;
+
+                    <button type="submit" style="height: 50px; width: 90%; font-size: 20px;
                             margin-left: 5%; background-color: #5BDD5B; color: white;" onclick="window.location.href='${pageContext.request.contextPath}/register'">Зарегистрироваться</button>
-                    </form:form>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/login/oauth/authorize?client_id=7c2663d064ffe9eea9d9">Войти с помощью GitHub</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://oauth.vk.com/authorize?client_id=6910428&display=page&redirect_uri=http://localhost:8000/corp-client/authvk&scope=friends&response_type=code&v=5.92">Войти с помощью VK</a>
                 </div>
                 <div class="col-md-3"></div>
         </div>

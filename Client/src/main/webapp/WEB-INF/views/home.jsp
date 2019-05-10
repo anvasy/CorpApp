@@ -27,7 +27,7 @@
                             </form:form>
                         </c:when>
                         <c:otherwise>
-                            <form:form method="POST" action="admin">
+                            <form:form method="POST" action="logout">
                                 <button style="margin-top: 15px; background-color: Transparent;border: none;outline:none">
                                     <img src="<c:url value="/resources/img/Minus.png"/>" class="login">
                                 </button>

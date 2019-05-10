@@ -32,9 +32,7 @@ public class UserService extends com.anvasy.services.Service<User> {
             role = "user";
         else
             role = "admin";
-        Query query = session.createQuery("update User set role=? where username=?");
-        query.setParameter(0, role);
-        query.setParameter(1, username);
+        Query query = session.createQuery("update User set role=? where username=?").setParameter(0, role).setParameter(1, username);
         Transaction tx = session.beginTransaction();
         query.executeUpdate();
         tx.commit();
@@ -52,7 +50,7 @@ public class UserService extends com.anvasy.services.Service<User> {
 
     public User register(User user) {
         try {
-           session.save(user);
+            session.save(user);
             Transaction tx = session.beginTransaction();
             session.flush();
             tx.commit();
@@ -61,5 +59,18 @@ public class UserService extends com.anvasy.services.Service<User> {
         }
         close();
         return user;
+    }
+
+    public User oAuth(User user) {
+        Query query = session.createQuery("from User where username=?");
+
+        query.setParameter(0, user.getUsername());
+        User newUser = (User) query.uniqueResult();
+        if(newUser == null) {
+            register(user);
+            user.setRole("user");
+            return user;
+        }
+        return newUser;
     }
 }

@@ -17,14 +17,17 @@ import java.util.List;
 @Service
 public class RestUserConnector {
 
-    private static String GET_USER_URL = "http://an_vasy:8080/corp-server/user";
+    /*private static String GET_USER_URL = "http://an_vasy:8080/corp-server/user";
     private static String USER_URL = "http://an_vasy:8080/corp-server/user/%s";
-    private static String CHANGE_USER_URL = "http://an_vasy:8080/corp-server/user/%s/%s";
+    private static String CHANGE_USER_URL = "http://an_vasy:8080/corp-server/user/%s/%s";*/
+
+    private static String GET_USER_URL = "http://localhost:8080/corp-server/user";
+    private static String USER_URL = "http://localhost:8080/corp-server/user/%s";
+    private static String CHANGE_USER_URL = "http://localhost:8080/corp-server/user/%s/%s";
 
     public List<User> getUsers() {
-        RestTemplate restTemplate = new RestTemplate();
-        HttpEntity<User> request = new HttpEntity<>(new User());
-        ResponseEntity<List<User>> userResponse = restTemplate.exchange(GET_USER_URL, HttpMethod.GET, request, new ParameterizedTypeReference<List<User>>() { });
+        ResponseEntity<List<User>> userResponse = new RestTemplate().exchange(GET_USER_URL, HttpMethod.GET, new HttpEntity<>(new User()),
+                new ParameterizedTypeReference<List<User>>() { });
         return userResponse.getBody();
     }
 

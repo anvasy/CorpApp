@@ -75,7 +75,7 @@
                 </TABLE>
                 <br>
                 <br>
-                <form:form method="post" action="admin">
+                <form:form method="post" action="logout">
                     <button type="submit" name="logout" class="btn">Выйти</button>
                 </form:form>
             </div>

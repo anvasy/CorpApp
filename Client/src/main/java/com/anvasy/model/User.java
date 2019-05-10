@@ -14,6 +14,13 @@ public class User {
 
     public User() { }
 
+    public User(String username, String name, String surname, String regType) {
+        this.username = username;
+        this.name = name;
+        this.surname = surname;
+        this.regType = regType;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -25,6 +32,8 @@ public class User {
     public String getRole() {
         return role;
     }
+
+    public void setPassword(String password) { this.password = password; }
 
     public String getRegType() {
         return regType;
@@ -45,4 +54,12 @@ public class User {
     public String getPassword() {
         return password;
     }
+
+    public void setSurname(String surname) { this.surname = surname; }
+
+    public void setRegType(String regType) { this.regType = regType; }
+
+    public void setUsername(String username) { this.username = username; }
+
+    public void setRole(String role) { this.role = role; }
 }
