@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
+import java.util.Map;
 
 @Controller
 public class ArticleController {
@@ -19,10 +19,13 @@ public class ArticleController {
     private RestConnector restConnector;
 
     @RequestMapping(value = {"/home", "/"}, method = RequestMethod.GET)
-    public ModelAndView getArticleList() {
+    public ModelAndView getArticleList(@RequestParam(defaultValue = "0", required = false) String page) {
         ModelAndView modelAndView = new ModelAndView("/home");
-        List<Article> articles = restConnector.getArticleList();
-        modelAndView.addObject("articles", articles);
+        Map<String, Object> articles = restConnector.getArticleList(page);
+        modelAndView.addObject("articles", articles.get("articles"));
+        modelAndView.addObject("page", articles.get("page"));
+        int max = (int)articles.get("max");
+        modelAndView.addObject("max", (int)Math.ceil(max/10.0));
         return modelAndView;
     }
 

@@ -98,9 +98,36 @@
                     </TABLE>
                     <br>
                     <br>
-                    <form:form action="addedit" method="get">
-                        <button class="btn-block" type="submit" name="id" value="0">Добавить статью</button>
-                    </form:form>
+                    <h4>Страница ${page + 1} из ${max}</h4>
+                    <div class="col-md-6">
+                        <c:choose>
+                    <c:when test="${page != '0'}">
+                        <form:form action="home" method="get">
+                            <button style="color: white; background-color: #4EDD52; width: 100%; height: 40px" value="${page - 1}" value="${page - 1}" >Назад</button>
+                        </form:form>
+                    </c:when>
+                        <c:otherwise>
+                            <form:form action="home" method="get">
+                                <button  style="color: white; background-color: #4EDD52; width: 100%; height: 40px" value="${page - 1}" disabled="true">Назад</button>
+                            </form:form>
+                        </c:otherwise>
+                        </c:choose>
+                    </div>
+                    <div class="col-md-6">
+                        <c:choose>
+                            <c:when test="${max == page + 1}">
+                                <form:form action="home" method="get">
+                                    <button disabled="true" style="background-color: #4EDD52; color: white; width: 100%; height: 40px" name="page" value="${page + 1}">Далее</button>
+                                </form:form>
+                            </c:when>
+                            <c:otherwise>
+                                <form:form action="home" method="get">
+                                    <button  style="background-color: #4EDD52; color: white; width: 100%; height: 40px" name="page" value="${page + 1}">Далее</button>
+                                </form:form>
+                            </c:otherwise>
+                        </c:choose>
+
+                    </div>
                 </div>
             </div>
         </div>

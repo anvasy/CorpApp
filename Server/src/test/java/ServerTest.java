@@ -6,6 +6,7 @@ import org.hibernate.query.Query;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -16,6 +17,9 @@ public class ServerTest {
         ArticleService articleService = new ArticleService();
         List<Article> articleList = articleService.getAll();
         assertNotNull(articleList);
+
+        Map<String, Object> articles = articleService.getAll(1);
+        assertNotNull(articles);
 
         Article article = new Article();
         article.setTopic("TEST TOPIC");

@@ -61,6 +61,7 @@
                     <div itemscope itemtype="http://schema.org/Article">
                         <h2 itemprop="name">${article.topic}</h2>
                         <meta itemprop="headline" content="${article.topic}">
+                        <img itemprop="image" src="<c:url value="/resources/img/tablet.jpg"/>" title="" alt="">
                         <h3>Оценка: ${article.rate}</h3>
                         <c:if test="${sessionScope.get('role') ne null}">
                             <form action="bonus" method="post">
@@ -81,6 +82,11 @@
                         <h3>Краткое содержание: </h3>
                         <p itemprop="articleBody">${article.summary}</p>
                         <meta itemprop="description" content="${article.summary}">
+                        <span itemprop="datePublished" content="2018-06-18"></span>
+                        <div itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                            <img itemprop="image" src="<c:url value="/resources/img/profile.png"/>"/>
+                            <span itemprop="name">guest</span>
+                        </div>
                         <hr>
                         <h3>Текст статьи: </h3>
                         <p>${article.content}</p>
@@ -98,7 +104,15 @@
                             </c:if>
                         </c:if>
                         <hr>
-                    </div>
+                        <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                            <link itemprop="url image" href="https://soltyk.ru/assets/images/soltykam.jpg"/>
+                        </div>
+                        <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="anvasy">
+                            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                                <link itemprop="url image" href="<c:url value="/resources/img/profile.png"/>"/>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>

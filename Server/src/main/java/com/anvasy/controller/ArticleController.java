@@ -6,19 +6,15 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.Map;
 
 @RestController
 public class ArticleController {
 
-    private org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(ArticleController.class);
-
-    @RequestMapping(value = "/article", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody List<Article> getArticleList() {
+    @RequestMapping(value = "/articles/{page}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public @ResponseBody Map<String, Object> getArticleList(@PathVariable("page") String page) {
         ArticleService articleService = new ArticleService();
-        List<Article> articles = articleService.getAll();
-        logger.info(articles.get(0).getTopic());
-        return articles;
+        return articleService.getAll(Integer.valueOf(page));
     }
 
     @RequestMapping(value = "/article/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)

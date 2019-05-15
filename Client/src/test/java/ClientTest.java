@@ -4,26 +4,18 @@ import com.anvasy.model.Article;
 import com.anvasy.model.User;
 import com.anvasy.rest.RestConnector;
 import com.anvasy.rest.RestUserConnector;
-import com.anvasy.utils.OAuthUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Matchers;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpMethod;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
-import static org.hamcrest.Matchers.any;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.doNothing;
@@ -93,7 +85,12 @@ public class ClientTest {
         Article first = new Article();
         Article second = new Article();
 
-        when(restConnector.getArticleList()).thenReturn(Arrays.asList(first, second));
+        Map<String, Object> map = new HashMap<>();
+        map.put("max", 11);
+        map.put("page", 1);
+        map.put("articles", new ArrayList<Article>());
+
+        when(restConnector.getArticleList(anyString())).thenReturn(map);
         when(restConnector.getArticle(anyInt())).thenReturn(new Article());
         doNothing().when(restConnector).updateArticle(Matchers.any(Article.class));
         doNothing().when(restConnector).removeArticle(anyInt());
